@@ -1,0 +1,19 @@
+/*-- scss:defaults --*/
+
+$body-bg: white;
+
+$body-color: #474C4A;
+$link-color: #909A91;
+$presentation-heading-color: darken(#909A91, 15%);
+
+$title-size: 50px !important;
+
+$code-bg: white; // inline code background color
+$code-color: #a387a0; // inline code text color
+
+/*-- scss:rules --*/
+.subtitle {
+  font-size: 50px !important;
+  line-height: 0;
+  color: $presentation-heading-color;
+}

@@ -1,0 +1,180 @@
+---
+title: "To Explore or To Exploit"
+subtitle: "Decoding Human Decision Making with `R` and `Python`"
+author: Erin Bugbee
+format: 
+  revealjs:
+    theme: [default, custom-theme.scss]
+    incremental: true
+editor: visual
+---
+
+## Shopping for a Flight to Seattle {{< fa plane >}}
+
+![](images/alaska.png){.fragment fig-align="center" width="700"}
+
+# Optimal Stopping Problem
+
+::: notes
+-   Mathematically optimal solution for calculating the optimal stopping point
+:::
+
+...
+
+**Question:**
+
+. . .
+
+When should I stop searching?
+
+. . .
+
+**Answer:**
+
+. . .
+
+<div>
+
+{{< fa calculator title="Calculator" >}}
+
+</div>
+
+## Explore-Exploit Tradeoff
+
+-   Balancing:
+
+    -   Gathering information through search – ***exploration*** {{< fa map-location-dot title="Map" >}}
+
+    -   Leveraging known information – ***exploitation*** {{< fa bullseye title="Bullseye" >}}
+
+## Humans Do Not Decide Optimally
+
+![](images/486E32BB-6178-4CEC-AE9D-21047AFDEDCB_1_105_c.jpeg){fig-align="center"}
+
+## Cognitive Decision Science
+
+::: notes
+-   Cognitive process
+
+-   Systematic deviations from rationality
+:::
+
+-   Study of how humans make decisions
+
+## About Me
+
+::: columns
+::: {.column width="50%"}
+![](images/erin-01.jpeg)
+:::
+
+::: {.column width="50%"}
+-   PhD Candidate at Carnegie Mellon University in Cognitive Decision Science
+
+-   ScB in Statistics and Behavioral Decision Sciences at Brown University
+
+-   Interned at Apple, Amazon x2, Disney, Microsoft
+:::
+:::
+
+## Decoding Human Decision Making
+
+1.  Predicting human behavior using Python {{< fa brands python title="Python" >}}
+2.  Running human experiments {{< fa flask title="Flask" >}}
+3.  Analyzing data in R {{< fa brands r-project title="R Project" >}}
+
+# Predicting Human Behavior Using Python {{< fa brands python title="Python" >}}
+
+## Build Decision Making Environment
+
+-   Represent a decision making task through Python code
+
+## Cognitive Modeling
+
+-   Algorithms representing the human cognitive process
+
+-   Used to simulate human decisions, make predictions
+
+-   Use [PyIBL](http://pyibl.ddmlab.com) Python library
+
+## PyIBL
+
+![](images/pyibl.png)
+
+## Simulate Agents
+
+-   Optimal Agent as a baseline
+
+-   Cognitive Agent as a proxy for humans
+
+```{python}
+#| eval: false
+import pyibl 
+a = pyibl.Agent(["action", "value", "dist_from_end"], "Optimal Stopping Agent")
+```
+
+# Running Behavioral Experiments with Human Participants {{< fa flask title="Flask" >}}
+
+## Develop Experiment
+
+-   Create tasks that replicate real-world decisions
+
+-   Integrate into Qualtrics survey
+
+-   Tools:
+
+    -   Javascript, HTML, CSS, Qualtrics
+
+## Optimal Stopping Experiment
+
+![](images/experiment2_outcome.mov){height="800" fig-align="center" height="600"}
+
+## Collect Data
+
+-   Participants through online platforms
+
+-   Tools:
+
+    -   Amazon Mechanical Turk, Prolific
+
+# Analyzing Behavior Using {{< fa brands r-project title="R Project" >}}
+
+## Analyze Data and Report
+
+-   Export data as csv from Qualtrics and stored from Javascript experiment
+
+-   Analyze in a reproducible Quarto document
+
+-   Figures using ggplot2
+
+## Results
+
+## People stop searching too early
+
+-   People tend to stop too early, underexplore
+
+-   More knowledge leads to earlier stopping, less exploration than less knowledge
+
+# Conclusion
+
+## The Right Tool
+
+-   
+
+## Exploration at posit::conf
+
+-   If this is your first posit::conf...
+
+    -   There are lots of new people, technologies, topics to learn
+
+-   If you have attended many times before....
+
+    -   You likely have made connections, know which sessions are of interest
+
+## Keep Exploring
+
+-   Meet new people, learning new things, see a new place
+
+-   Don't stop your search too early!
+
+# Resources
