@@ -17,3 +17,15 @@ $code-color: #a387a0; // inline code text color
   line-height: 0;
   color: $presentation-heading-color;
 }
+
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.my-icon {
+    vertical-align: middle;
+    font-size: 40px;
+}

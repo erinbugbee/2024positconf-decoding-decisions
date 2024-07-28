@@ -1,12 +1,16 @@
 ---
 title: "To Explore or To Exploit"
 subtitle: "Decoding Human Decision Making with `R` and `Python`"
+footer: "posit::conf(2024)"
 author: Erin Bugbee
 format: 
   revealjs:
     theme: [default, custom-theme.scss]
     incremental: true
+    slideNumber: true
 editor: visual
+execute:
+  echo: true
 ---
 
 ## Shopping for a Flight to Seattle {{< fa plane >}}
@@ -17,31 +21,12 @@ editor: visual
 
 ::: notes
 -   Mathematically optimal solution for calculating the optimal stopping point
+-   Question is when to stop searching
 :::
-
-...
-
-**Question:**
-
-. . .
-
-When should I stop searching?
-
-. . .
-
-**Answer:**
-
-. . .
-
-<div>
-
-{{< fa calculator title="Calculator" >}}
-
-</div>
 
 ## Explore-Exploit Tradeoff
 
--   Balancing:
+-   Finding the ***optimal*** balance of:
 
     -   Gathering information through search – ***exploration*** {{< fa map-location-dot title="Map" >}}
 
@@ -49,7 +34,7 @@ When should I stop searching?
 
 ## Humans Do Not Decide Optimally
 
-![](images/486E32BB-6178-4CEC-AE9D-21047AFDEDCB_1_105_c.jpeg){fig-align="center"}
+![](images/486E32BB-6178-4CEC-AE9D-21047AFDEDCB_1_105_c.jpeg){.fragment fig-align="center" width="600"}
 
 ## Cognitive Decision Science
 
@@ -57,9 +42,15 @@ When should I stop searching?
 -   Cognitive process
 
 -   Systematic deviations from rationality
+
+-   according to economic theory of rationality
 :::
 
--   Study of how humans make decisions
+-   Study of:
+    -   how people ***should*** make decisions
+    -   how they ***actually*** make decisions
+    -   how this process can be ***modeled*** to both predict and explain behavior
+    -   how they can make ***better*** decisions
 
 ## About Me
 
@@ -73,93 +64,275 @@ When should I stop searching?
 
 -   ScB in Statistics and Behavioral Decision Sciences at Brown University
 
--   Interned at Apple, Amazon x2, Disney, Microsoft
+-   Interned at Apple, Amazon, Disney, Microsoft
+
+-   On the job market for 2025
 :::
 :::
 
 ## Decoding Human Decision Making
 
-1.  Predicting human behavior using Python {{< fa brands python title="Python" >}}
-2.  Running human experiments {{< fa flask title="Flask" >}}
+::: notes
+1.  Running human experiments {{< fa flask title="Flask" >}}
+2.  Simulating behavior using Python {{< fa brands python title="Python" >}}
 3.  Analyzing data in R {{< fa brands r-project title="R Project" >}}
+:::
 
-# Predicting Human Behavior Using Python {{< fa brands python title="Python" >}}
+::: columns
+::: {.column .fragment .center width="33%"}
+::: v-center-container
+{{< fa flask title="Flask" size=5x >}}
+:::
 
-## Build Decision Making Environment
+::: v-center-container
+<center>Running human experiments</center>
+:::
+:::
 
--   Represent a decision making task through Python code
+::: {.column .fragment .center width="33%"}
+::: v-center-container
+{{< fa brands python title="Python" size=5x >}}
+:::
 
-## Cognitive Modeling
+<center>Simulating behavior</center>
+:::
 
--   Algorithms representing the human cognitive process
+::: {.column .fragment .center width="33%"}
+::: v-center-container
+{{< fa brands r-project title="R Project" size=5x >}}
+:::
 
--   Used to simulate human decisions, make predictions
+<center>Analyzing data</center>
+:::
+:::
 
--   Use [PyIBL](http://pyibl.ddmlab.com) Python library
+# Running Human Experiments {{< fa flask title="Flask" >}}
 
-## PyIBL
+## Design Experiment
 
-![](images/pyibl.png)
+-   Decision Making Task
 
-## Simulate Agents
+    -   Optimal Stopping Task
 
--   Optimal Agent as a baseline
+-   Factors to manipulate
 
--   Cognitive Agent as a proxy for humans
+    -   Feedback Type
 
-```{python}
-#| eval: false
-import pyibl 
-a = pyibl.Agent(["action", "value", "dist_from_end"], "Optimal Stopping Agent")
-```
-
-# Running Behavioral Experiments with Human Participants {{< fa flask title="Flask" >}}
+    -   Knowledge of Distribution of Option Values
 
 ## Develop Experiment
 
--   Create tasks that replicate real-world decisions
+::: notes
+-   Build task for human participants to complete
 
 -   Integrate into Qualtrics survey
 
 -   Tools:
 
     -   Javascript, HTML, CSS, Qualtrics
+:::
 
-## Optimal Stopping Experiment
+::: columns
+::: {.column .fragment .center width="45%"}
+::: v-center-container
+![](images/survey.png)
+:::
 
-![](images/experiment2_outcome.mov){height="800" fig-align="center" height="600"}
+<center>Survey</center>
+:::
 
+::: {.column .fragment .center width="10%"}
+::: v-center-container
+{{< fa plus size=2x >}}
+:::
+:::
+
+::: {.column .fragment .center width="45%"}
+::: v-center-container
+![](images/choice.png)
+:::
+
+<center>Task</center>
+:::
+:::
+
+## Optimal Stopping Task
+
+GO THROUGH TASK
+
+TODO
+
+## Let's Play A Few Rounds
+
+HUMAN choice
+
+IBL choice
+
+Optimal choice
+
+Real problems
+
+```{=html}
+<!-- #Optimal Stopping Experiment
+
+MAYBE REMOVE?
+
+![](images/experiment2_outcome.mov){height="600" fig-align="center"}
+
+-->
+```
 ## Collect Data
 
--   Participants through online platforms
+![](images/mturk.png){.fragment fig-align="center" width="1500"}
 
--   Tools:
+# Simulating Behavior Using Python {{< fa brands python title="Python" >}}
 
-    -   Amazon Mechanical Turk, Prolific
+## Build Decision Making Environment
+
+::: notes
+-   Create task that replicates real-world decision environment
+-   Represent task through Python code
+:::
+
+::: columns
+::: {.column width="50%"}
+![](images/choice.png){fig-align="center" width="400"}
+:::
+
+::: {.column width="50%"}
+![](images/simulation-code.mov){fig-align="center"}
+:::
+:::
+
+## Agents
+
+::: columns
+::: {.column width="50%"}
+**Optimal Agent** {{< fa trophy >}}
+
+-   Decide according to the optimal process
+
+-   Serves as baseline
+
+-   Calculate according to mathematical theory
+:::
+
+::: {.column width="50%"}
+**Cognitive Agent** {{< fa brain >}}
+
+-   Decide according to a cognitive algorithm
+
+-   Serves as prediction of human behavior
+
+-   Use [PyIBL](http://pyibl.ddmlab.com) Python library
+:::
+:::
+
+## PyIBL
+
+![](images/pyibl.png)
+
+## Define Agent {auto-animate="true"}
+
+```{.python code-line-numbers="1-3"}
+import pyibl 
+a = pyibl.Agent(["action", "value", "dist_from_end"])
+a.similarity(["value", "dist_from_end"], pyibl.positive_linear_similarity)
+```
+
+## Give Prior Experience {auto-animate="true"}
+
+```{.python code-line-numbers="5-6"}
+import pyibl 
+a = pyibl.Agent(["action", "value", "dist_from_end"])
+a.similarity(["value", "dist_from_end"], pyibl.positive_linear_similarity)
+
+a.populate([{"action": "Select", "value": 50, "dist_from_end": 9}],1)
+a.populate([{"action": "Pass", "value": 50, "dist_from_end": 9}],1)
+```
+
+## Make Choice {auto-animate="true"}
+
+```{.python code-line-numbers="8-12"}
+import pyibl 
+a = pyibl.Agent(["action", "value", "dist_from_end"])
+a.similarity(["value", "dist_from_end"], pyibl.positive_linear_similarity)
+
+a.populate([{"action": "Select", "value": 50, "dist_from_end": 9}],1)
+a.populate([{"action": "Pass", "value": 50, "dist_from_end": 9}],1)
+
+value = 50
+select_action =  {"action": "Select", "value": value, "dist_from_end": 9}
+pass_action =  {"action": "Pass", "value": value, "dist_from_end": 9}
+choice = a.choose([select_action, pass_action])
+choice["action"]
+```
+
+## Receive Feedback {auto-animate="true"}
+
+```{.python code-line-numbers="14-15"}
+import pyibl 
+a = pyibl.Agent(["action", "value", "dist_from_end"])
+a.similarity(["value", "dist_from_end"], pyibl.positive_linear_similarity)
+
+a.populate([{"action": "Select", "value": 50, "dist_from_end": 9}],1)
+a.populate([{"action": "Pass", "value": 50, "dist_from_end": 9}],1)
+
+value = 50
+select_action =  {"action": "Select", "value": value, "dist_from_end": 9}
+pass_action =  {"action": "Pass", "value": value, "dist_from_end": 9}
+choice = a.choose([select_action, pass_action])
+choice["action"]
+
+# Feedback depends on correctness
+a.respond(feedback)
+```
+
+## Why Python?
+
+-   PyIBL and many other modeling libraries (e.g. scikit-learn, keras)
+
+-   General-purpose and flexible
 
 # Analyzing Behavior Using {{< fa brands r-project title="R Project" >}}
 
 ## Analyze Data and Report
 
--   Export data as csv from Qualtrics and stored from Javascript experiment
+Qualtrics –\> CSV
 
--   Analyze in a reproducible Quarto document
+Javascript Experiment –\> CSV
 
--   Figures using ggplot2
+Join and analyze with R in reproducible Quarto document
+
+Compare to optimal and IBL agents
+
+Figures using ggplot2
+
+## Why R?
+
+-   Easy to visualize and manipulate data quickly
+-   ggplot2
+-   Excels in statistical analysis
 
 ## Results
 
 ## People stop searching too early
 
--   People tend to stop too early, underexplore
+## People learn from feedback
 
--   More knowledge leads to earlier stopping, less exploration than less knowledge
+## Having knowledge of the distribution hinders necessary exploration
 
 # Conclusion
 
+## Tools
+
+-   Decoding the human mind is difficult and requires many tools
+
 ## The Right Tool
 
--   
+-   Use what can help you accomplish the task
+-   Best when used together
+-   Don't be afraid to learn a new tool
 
 ## Exploration at posit::conf
 
@@ -173,8 +346,12 @@ a = pyibl.Agent(["action", "value", "dist_from_end"], "Optimal Stopping Agent")
 
 ## Keep Exploring
 
--   Meet new people, learning new things, see a new place
+-   Don't exploit your knowledge
 
--   Don't stop your search too early!
+-   Meet new people, learn new things, see a new place
 
 # Resources
+
+## Resources
+
+Short link for GitHub with slides, resources
