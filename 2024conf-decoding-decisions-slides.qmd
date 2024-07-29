@@ -15,7 +15,7 @@ execute:
 
 ## Shopping for a Flight to Seattle {{< fa plane >}}
 
-![](images/alaska.png){.fragment fig-align="center" width="700"}
+![](images/alaska.png){fig-align="center" width="4.92in"}
 
 # Optimal Stopping Problem
 
@@ -34,7 +34,7 @@ execute:
 
 ## Humans Do Not Decide Optimally
 
-![](images/486E32BB-6178-4CEC-AE9D-21047AFDEDCB_1_105_c.jpeg){.fragment fig-align="center" width="600"}
+![](images/thinkingfastandslow.jpeg){fig-align="center"}
 
 ## Cognitive Decision Science
 
@@ -142,7 +142,7 @@ execute:
 :::
 
 ::: {.column .fragment .center width="10%"}
-::: v-center-container
+::: {style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"}
 {{< fa plus size=2x >}}
 :::
 :::
@@ -183,7 +183,7 @@ MAYBE REMOVE?
 ```
 ## Collect Data
 
-![](images/mturk.png){.fragment fig-align="center" width="1500"}
+![](images/mturk-screen.png){fig-align="center"}
 
 # Simulating Behavior Using Python {{< fa brands python title="Python" >}}
 
@@ -230,11 +230,11 @@ MAYBE REMOVE?
 
 ## PyIBL
 
-![](images/pyibl.png)
+![](images/pyibl-page.png)
 
 ## Define Agent {auto-animate="true"}
 
-```{.python code-line-numbers="1-3"}
+``` {.python code-line-numbers="1-3"}
 import pyibl 
 a = pyibl.Agent(["action", "value", "dist_from_end"])
 a.similarity(["value", "dist_from_end"], pyibl.positive_linear_similarity)
@@ -242,7 +242,7 @@ a.similarity(["value", "dist_from_end"], pyibl.positive_linear_similarity)
 
 ## Give Prior Experience {auto-animate="true"}
 
-```{.python code-line-numbers="5-6"}
+``` {.python code-line-numbers="5-6"}
 import pyibl 
 a = pyibl.Agent(["action", "value", "dist_from_end"])
 a.similarity(["value", "dist_from_end"], pyibl.positive_linear_similarity)
@@ -253,7 +253,7 @@ a.populate([{"action": "Pass", "value": 50, "dist_from_end": 9}],1)
 
 ## Make Choice {auto-animate="true"}
 
-```{.python code-line-numbers="8-12"}
+``` {.python code-line-numbers="8-12"}
 import pyibl 
 a = pyibl.Agent(["action", "value", "dist_from_end"])
 a.similarity(["value", "dist_from_end"], pyibl.positive_linear_similarity)
@@ -270,7 +270,7 @@ choice["action"]
 
 ## Receive Feedback {auto-animate="true"}
 
-```{.python code-line-numbers="14-15"}
+``` {.python code-line-numbers="14-15"}
 import pyibl 
 a = pyibl.Agent(["action", "value", "dist_from_end"])
 a.similarity(["value", "dist_from_end"], pyibl.positive_linear_similarity)
@@ -298,6 +298,7 @@ a.respond(feedback)
 
 ## Analyze Data and Report
 
+::: notes
 Qualtrics –\> CSV
 
 Javascript Experiment –\> CSV
@@ -307,6 +308,9 @@ Join and analyze with R in reproducible Quarto document
 Compare to optimal and IBL agents
 
 Figures using ggplot2
+:::
+
+/
 
 ## Why R?
 
@@ -326,13 +330,45 @@ Figures using ggplot2
 
 ## Tools
 
+::: notes
 -   Decoding the human mind is difficult and requires many tools
+:::
 
-## The Right Tool
+::: columns
+::: {.column width="33%"}
+![](images/qualtrics.png){width="350"}
 
+![](images/javascript.svg){height="100"} ![](images/html.svg){height="100"} ![](images/css.svg){height="100"}
+:::
+
+::: {.column width="33%"}
+![](images/python.png){width="100"}
+
+![](images/pyibl.png){width="200"}
+
+![](images/vscode.jpg){width="100"}
+:::
+:::
+
+::: {.column width="33%"}
+![](images/R.png){width="100"}
+
+![](images/quarto.png){width="300"}
+
+![](images/RStudio.png){width="300"}
+:::
+
+## Exploration in Choosing a Tool
+
+::: notes
 -   Use what can help you accomplish the task
 -   Best when used together
--   Don't be afraid to learn a new tool
+-   Don't be afraid to explore and learn a new tool
+:::
+
+TODO: R and Python together
+
+When you have a {{< fa hammer >}}, everything looks like a nail.
 
 ## Exploration at posit::conf
 
