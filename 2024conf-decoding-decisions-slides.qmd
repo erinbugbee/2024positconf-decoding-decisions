@@ -135,7 +135,7 @@ execute:
 ::: columns
 ::: {.column .fragment .center width="45%"}
 ::: v-center-container
-![](images/survey.png)
+![](images/survey.png){height="400"}
 :::
 
 <center>Survey</center>
@@ -149,7 +149,7 @@ execute:
 
 ::: {.column .fragment .center width="45%"}
 ::: v-center-container
-![](images/choice.png)
+![](images/choice.png){height="400"}
 :::
 
 <center>Task</center>
@@ -196,25 +196,31 @@ MAYBE REMOVE?
 -   Represent task through Python code
 :::
 
+
 ::: columns
-::: {.column .fragment  width="45%"}
-::: .v-center-container
-![](images/choice.png){fig-align="center"}
-:::
+::: {.column .fragment .center width="45%"}
+::: v-center-container
+![](images/choice.png){fig-align="center" height="400"}
 :::
 
-::: {.column .fragment width="10%"}
-::: {style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);"}
+<center>Task</center>
+:::
+
+::: {.column .fragment .center width="10%"}
+::: {style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"}
 {{< fa arrow-right size=2x >}}
 :::
 :::
 
-::: {.column .fragment  width="45%"}
-::: .v-center-container
-![](images/simulation-code.mov){fig-align="center"}
+::: {.column .fragment .center width="45%"}
+::: v-center-container
+![](images/simulation-code.mov){fig-align="center" height="400"}
+:::
+
+<center>Code</center>
 :::
 :::
-:::
+
 
 ## Agents
 
@@ -324,7 +330,7 @@ Figures using ggplot2
 
 ::: columns
 ::: {.column .fragment  width="45%"}
-::: .v-center-container
+::: v-center-container
 ![](images/survey.png){fig-align="center" height="250"}
 ![](images/choice.png){fig-align="center" height="250"}
 :::
@@ -368,7 +374,7 @@ Figures using ggplot2
 -   ggplot2
 -   Excels in statistical analysis
 
-## Results
+# Results
 
 ## People stop searching too early
 
@@ -432,7 +438,7 @@ When you have a {{< fa hammer >}}, everything looks like a nail.
 
 ## Keep Exploring
 
--   Don't exploit your knowledge
+-   Be careful of over-exploiting your knowledge
 
 -   Meet new people, learn new things, see a new place
 
