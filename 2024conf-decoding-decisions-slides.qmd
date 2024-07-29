@@ -34,6 +34,14 @@ execute:
 
 ## Humans Do Not Decide Optimally
 
+::: notes
+Psychologist Daniel Kahneman
+
+People use heuristics, or mental shortcuts
+
+Can lead to biases, which are systematic deviations from what is economically rational
+:::
+
 ![](images/thinkingfastandslow.jpeg){fig-align="center"}
 
 ## Cognitive Decision Science
@@ -156,13 +164,62 @@ execute:
 :::
 :::
 
-## Optimal Stopping Task
+# Let's Decide When to Stop
 
-GO THROUGH TASK
+## 
 
-TODO
+::: notes
+3, 22
+:::
 
-## Let's Play A Few Rounds
+![](images/choice-1.png){fig-align="center" width="500"}
+
+## 
+
+![](images/choice-2.png){fig-align="center" width="500"}
+
+## 
+
+![](images/choice-3.png){fig-align="center" width="500"}
+
+## 
+
+![](images/choice-4.png){fig-align="center" width="500"}
+
+## 
+
+![](images/choice-5.png){fig-align="center" width="500"}
+
+## 
+
+![](images/choice-6.png){fig-align="center" width="500"}
+
+## 
+
+![](images/choice-7.png){fig-align="center" width="500"}
+
+## 
+
+![](images/choice-8.png){fig-align="center" width="500"}
+
+## 
+
+![](images/choice-9.png){fig-align="center" width="500"}
+
+## 
+
+![](images/choice-10.png){fig-align="center" width="500"}
+
+## Optimal Stopping Experiment
+
+![](images/experiment2_outcome.mov){height="600" fig-align="center"}
+
+```{=html}
+<!-- #Optimal Stopping Experiment
+
+MAYBE REMOVE?
+
+![](images/experiment2_outcome.mov){height="600" fig-align="center"}
 
 TODO
 
@@ -173,13 +230,6 @@ IBL choice
 Optimal choice
 
 Real problems
-
-```{=html}
-<!-- #Optimal Stopping Experiment
-
-MAYBE REMOVE?
-
-![](images/experiment2_outcome.mov){height="600" fig-align="center"}
 
 -->
 ```
@@ -374,21 +424,21 @@ Figures using ggplot2
 
 # Results
 
-## Model accurately predicts human behavior
+## People stop searching too early {style="font-size: 30px;"}
 
-![](images/fig-reward-block-1.png){fig-align="center"}
+![](images/fig-search-length-1.png){fig-align="center" height="550"}
 
-## People learn from feedback
+## IBL Model accurately predicts human behavior {style="font-size: 30px;"}
 
-![](images/fig-accuracy-block-1.png){fig-align="center"}
+![](images/fig-reward-block-1.png){fig-align="center" height="550"}
 
-## People stop searching too early
+## People learn from feedback {style="font-size: 30px;"}
 
-![](images/fig-search-length-1.png){fig-align="center"}
+![](images/fig-accuracy-block-1.png){fig-align="center" height="550"}
 
-## Having knowledge of the distribution hinders necessary exploration
+## Having knowledge of the distribution hinders necessary exploration {style="font-size: 30px;"}
 
-![](images/fig-search-length-1.png){fig-align="center"}
+![](images/fig-search-length-1.png){fig-align="center" height="550"}
 
 # Conclusion
 
@@ -452,14 +502,14 @@ When you have a {{< fa hammer >}}, everything looks like a nail.
 
     -   You likely have made connections, know which sessions are of interest
 
-## Keep Exploring
+## Keep Exploring {{< fa search >}}
 
 -   Be careful of over-exploiting your knowledge
 
--   Meet new people, learn new things, see a new place
+-   Meet new people, learn new things, see a new place {{< fa hiking >}}
 
 # Resources
 
 ## Resources
 
-Short link for GitHub with slides, resources
+[bit.ly/decoding-decisions2024](https://bit.ly/decoding-decisions2024)
