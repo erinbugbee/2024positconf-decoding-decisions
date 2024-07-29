@@ -374,11 +374,21 @@ Figures using ggplot2
 
 # Results
 
-## People stop searching too early
+## Model accurately predicts human behavior
+
+![](images/fig-reward-block-1.png){fig-align="center"}
 
 ## People learn from feedback
 
+![](images/fig-accuracy-block-1.png){fig-align="center"}
+
+## People stop searching too early
+
+![](images/fig-search-length-1.png){fig-align="center"}
+
 ## Having knowledge of the distribution hinders necessary exploration
+
+![](images/fig-search-length-1.png){fig-align="center"}
 
 # Conclusion
 
@@ -424,22 +434,21 @@ Figures using ggplot2
 -   Don't be afraid to explore and learn a new tool
 :::
 
-::: {.fragment fragment-index=1}
+::: {.fragment fragment-index="1"}
 When you have a {{< fa hammer >}}, everything looks like a nail.
 :::
 
-::: {.fragment fragment-index=2}
-
+::: {.fragment fragment-index="2"}
 ![Image created by DALL-E](images/rpython-synergy.png){height="400" fig-align="center"}
 :::
 
 ## Exploration at posit::conf
 
--   If this is your first posit::conf...
+-   If this is your [first]{.fragment .highlight-red} posit::conf...
 
     -   There are lots of new people, technologies, topics to learn
 
--   If you have attended many times before....
+-   If you have attended [many]{.fragment .highlight-red} times before....
 
     -   You likely have made connections, know which sessions are of interest
 
