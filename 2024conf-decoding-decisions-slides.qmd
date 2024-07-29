@@ -391,10 +391,14 @@ Figures using ggplot2
 :::
 
 ::: columns
-::: {.column width="33%"}
-![](images/qualtrics.png){width="350"}
+::: {.column .center width="33%"}
+::: v-center-container
+![](images/qualtrics.png){width="300"}
+:::
+::: v-center-container
+![](images/javascript.svg){width="100"}![](images/html.svg){height="100"}![](images/css.svg){height="100"}
+:::
 
-![](images/javascript.svg){height="100"} ![](images/html.svg){height="100"} ![](images/css.svg){height="100"}
 :::
 
 ::: {.column width="33%"}
