@@ -196,7 +196,6 @@ MAYBE REMOVE?
 -   Represent task through Python code
 :::
 
-
 ::: columns
 ::: {.column .fragment .center width="45%"}
 ::: v-center-container
@@ -220,7 +219,6 @@ MAYBE REMOVE?
 <center>Code</center>
 :::
 :::
-
 
 ## Agents
 
@@ -329,10 +327,9 @@ Figures using ggplot2
 :::
 
 ::: columns
-::: {.column .fragment  width="45%"}
+::: {.column .fragment width="45%"}
 ::: v-center-container
-![](images/survey.png){fig-align="center" height="250"}
-![](images/choice.png){fig-align="center" height="250"}
+![](images/survey.png){fig-align="center" height="250"} ![](images/choice.png){fig-align="center" height="250"}
 :::
 :::
 
@@ -340,6 +337,7 @@ Figures using ggplot2
 ::: {style="position: absolute; top: 30%; left: 35%; transform: translate(-50%, -50%);"}
 {{< fa arrow-right size=2x >}}
 :::
+
 ::: {style="position: absolute; top: 70%; left: 35%; transform: translate(-50%, -50%);"}
 {{< fa arrow-right size=2x >}}
 :::
@@ -349,6 +347,7 @@ Figures using ggplot2
 ::: {style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);"}
 {{< fa file-csv size=2x >}}
 :::
+
 ::: {style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%);"}
 {{< fa file-csv size=2x >}}
 :::
@@ -366,7 +365,6 @@ Figures using ggplot2
 :::
 :::
 :::
-
 
 ## Why R?
 
@@ -395,10 +393,10 @@ Figures using ggplot2
 ::: v-center-container
 ![](images/qualtrics.png){width="300"}
 :::
-::: v-center-container
-![](images/javascript.svg){width="100"}![](images/html.svg){height="100"}![](images/css.svg){height="100"}
-:::
 
+::: v-center-container
+![](images/javascript.svg){width="88"}![](images/html.svg){height="100"}![](images/css.svg){height="100"}
+:::
 :::
 
 ::: {.column width="33%"}
@@ -426,9 +424,14 @@ Figures using ggplot2
 -   Don't be afraid to explore and learn a new tool
 :::
 
-TODO: R and Python together
-
+::: {.fragment fragment-index=1}
 When you have a {{< fa hammer >}}, everything looks like a nail.
+:::
+
+::: {.fragment fragment-index=2}
+
+![Image created by DALL-E](images/rpython-synergy.png){height="400" fig-align="center"}
+:::
 
 ## Exploration at posit::conf
 
