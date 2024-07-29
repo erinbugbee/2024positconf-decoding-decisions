@@ -56,7 +56,7 @@ execute:
 
 ::: columns
 ::: {.column width="50%"}
-![](images/erin-01.jpeg)
+![](images/erin.jpeg)
 :::
 
 ::: {.column width="50%"}
@@ -164,6 +164,8 @@ TODO
 
 ## Let's Play A Few Rounds
 
+TODO
+
 HUMAN choice
 
 IBL choice
@@ -195,12 +197,22 @@ MAYBE REMOVE?
 :::
 
 ::: columns
-::: {.column width="50%"}
-![](images/choice.png){fig-align="center" width="400"}
+::: {.column .fragment  width="45%"}
+::: .v-center-container
+![](images/choice.png){fig-align="center"}
+:::
 :::
 
-::: {.column width="50%"}
+::: {.column .fragment width="10%"}
+::: {style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);"}
+{{< fa arrow-right size=2x >}}
+:::
+:::
+
+::: {.column .fragment  width="45%"}
+::: .v-center-container
 ![](images/simulation-code.mov){fig-align="center"}
+:::
 :::
 :::
 
@@ -310,7 +322,45 @@ Compare to optimal and IBL agents
 Figures using ggplot2
 :::
 
-/
+::: columns
+::: {.column .fragment  width="45%"}
+::: .v-center-container
+![](images/survey.png){fig-align="center" height="250"}
+![](images/choice.png){fig-align="center" height="250"}
+:::
+:::
+
+::: {.column .fragment width="10%"}
+::: {style="position: absolute; top: 30%; left: 35%; transform: translate(-50%, -50%);"}
+{{< fa arrow-right size=2x >}}
+:::
+::: {style="position: absolute; top: 70%; left: 35%; transform: translate(-50%, -50%);"}
+{{< fa arrow-right size=2x >}}
+:::
+:::
+
+::: {.column .fragment width="10%"}
+::: {style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);"}
+{{< fa file-csv size=2x >}}
+:::
+::: {style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%);"}
+{{< fa file-csv size=2x >}}
+:::
+:::
+
+::: {.column .fragment width="10%"}
+::: {style="position: absolute; top: 50%; left: 65%; transform: translate(-50%, -50%);"}
+{{< fa arrow-right size=2x >}}
+:::
+:::
+
+::: {.column .fragment width="10%"}
+::: {style="position: absolute; top: 50%; left: 85%; transform: translate(-50%, -50%);"}
+{{< fa laptop-code size=4x >}}
+:::
+:::
+:::
+
 
 ## Why R?
 
