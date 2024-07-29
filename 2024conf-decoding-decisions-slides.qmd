@@ -377,18 +377,28 @@ Figures using ggplot2
 :::
 
 ::: columns
-::: {.column .fragment width="45%"}
+::: {.column .fragment width="35%"}
 ::: v-center-container
-![](images/survey.png){fig-align="center" height="250"} ![](images/choice.png){fig-align="center" height="250"}
+![](images/survey.png){fig-align="center" height="175"} 
+![](images/choice.png){fig-align="center" height="175"}
+
+::: {style="position: absolute; top: 85%; left: 8%; transform: translate(-50%, -50%);"}
+{{< fa brain size=2x >}} {{< fa trophy size=2x >}}
+:::
 :::
 :::
 
 ::: {.column .fragment width="10%"}
-::: {style="position: absolute; top: 30%; left: 35%; transform: translate(-50%, -50%);"}
+
+::: {style="position: absolute; top: 30%; left: 30%; transform: translate(-50%, -50%);"}
 {{< fa arrow-right size=2x >}}
 :::
 
-::: {style="position: absolute; top: 70%; left: 35%; transform: translate(-50%, -50%);"}
+::: {style="position: absolute; top: 55%; left: 30%; transform: translate(-50%, -50%);"}
+{{< fa arrow-right size=2x >}}
+:::
+
+::: {style="position: absolute; top: 80%; left: 30%; transform: translate(-50%, -50%);"}
 {{< fa arrow-right size=2x >}}
 :::
 :::
@@ -398,19 +408,23 @@ Figures using ggplot2
 {{< fa file-csv size=2x >}}
 :::
 
-::: {style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%);"}
+::: {style="position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%);"}
+{{< fa file-csv size=2x >}}
+:::
+
+::: {style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%);"}
 {{< fa file-csv size=2x >}}
 :::
 :::
 
 ::: {.column .fragment width="10%"}
-::: {style="position: absolute; top: 50%; left: 65%; transform: translate(-50%, -50%);"}
+::: {style="position: absolute; top: 55%; left: 65%; transform: translate(-50%, -50%);"}
 {{< fa arrow-right size=2x >}}
 :::
 :::
 
 ::: {.column .fragment width="10%"}
-::: {style="position: absolute; top: 50%; left: 85%; transform: translate(-50%, -50%);"}
+::: {style="position: absolute; top: 55%; left: 85%; transform: translate(-50%, -50%);"}
 {{< fa laptop-code size=4x >}}
 :::
 :::
