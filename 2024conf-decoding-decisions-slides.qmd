@@ -8,6 +8,7 @@ format:
     theme: [default, custom-theme.scss]
     incremental: true
     slideNumber: true
+    auto-play-media: true
 editor: visual
 execute:
   echo: true
@@ -286,7 +287,7 @@ Real problems
 ::: {.column width="50%"}
 **Cognitive Agent** {{< fa brain >}}
 
--   Decide according to a cognitive algorithm
+-   Decide according to a cognitive algorithm, an Instance-Based Learning (IBL) Model
 
 -   Serves as prediction of human behavior
 
@@ -379,8 +380,7 @@ Figures using ggplot2
 ::: columns
 ::: {.column .fragment width="35%"}
 ::: v-center-container
-![](images/survey.png){fig-align="center" height="175"} 
-![](images/choice.png){fig-align="center" height="175"}
+![](images/survey.png){fig-align="center" height="175"} ![](images/choice.png){fig-align="center" height="175"}
 
 ::: {style="position: absolute; top: 85%; left: 8%; transform: translate(-50%, -50%);"}
 {{< fa brain size=2x >}} {{< fa trophy size=2x >}}
@@ -389,7 +389,6 @@ Figures using ggplot2
 :::
 
 ::: {.column .fragment width="10%"}
-
 ::: {style="position: absolute; top: 30%; left: 30%; transform: translate(-50%, -50%);"}
 {{< fa arrow-right size=2x >}}
 :::
@@ -433,7 +432,8 @@ Figures using ggplot2
 ## Why R?
 
 -   Easy to visualize and manipulate data quickly
--   ggplot2
+    -   ggplot2
+    -   tidyverse
 -   Excels in statistical analysis
 
 # Results
@@ -508,19 +508,19 @@ When you have a {{< fa hammer >}}, everything looks like a nail.
 
 ## Exploration at posit::conf
 
--   If this is your [first]{.fragment .highlight-red} posit::conf...
+-   If this is your **first** posit::conf...
 
     -   There are lots of new people, technologies, topics to learn
 
--   If you have attended [many]{.fragment .highlight-red} times before....
+-   If you have attended **many** times before....
 
     -   You likely have made connections, know which sessions are of interest
 
-## Keep Exploring {{< fa search >}}
+## Keep Exploring {{< fa hiking >}}
 
 -   Be careful of over-exploiting your knowledge
 
--   Meet new people, learn new things, see a new place {{< fa hiking >}}
+-   Meet new people, learn new things, see a new place
 
 # Resources
 
