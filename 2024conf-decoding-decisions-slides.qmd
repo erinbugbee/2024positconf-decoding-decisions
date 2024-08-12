@@ -1,7 +1,7 @@
 ---
 title: "To Explore or To Exploit"
 subtitle: "Decoding Human Decision Making with `R` and `Python`"
-footer: "posit::conf(2024)"
+footer: "github.com/erinbugbee/2024positconf-decoding-decisions"
 author: Erin Bugbee
 format: 
   revealjs:
@@ -522,8 +522,12 @@ When you have a {{< fa hammer >}}, everything looks like a nail.
 
 -   Meet new people, learn new things, see a new place
 
-# Resources
+## Thank you!
 
-## Resources
+{{< fa link >}} [github.com/erinbugbee/2024positconf-decoding-decisions](https://github.com/erinbugbee/2024positconf-decoding-decisions)
 
-[bit.ly/decoding-decisions2024](https://bit.ly/decoding-decisions2024)
+{{< fa person-chalkboard >}} [erinbugbee.quarto.pub/2024positconf-decoding-decisions](https://erinbugbee.quarto.pub/2024positconf-decoding-decisions)
+
+{{< fa envelope >}} [erin_bugbee\@icloud.com](mailto:erin_bugbee@icloud.com)
+
+{{< fa laptop >}} [erinbugbee.com](https://www.erinbugbee.com)
