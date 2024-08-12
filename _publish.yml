@@ -1,4 +1,4 @@
 - source: 2024conf-decoding-decisions-slides.qmd
   quarto-pub:
     - id: 1627f041-720c-4886-845c-ea09ceac4dbb
-      url: 'https://erinbugbee.quarto.pub/2024positconf-decoding-human-decisions'
+      url: 'https://erinbugbee.quarto.pub/2024positconf-decoding-decisions'

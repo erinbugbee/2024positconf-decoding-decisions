@@ -279,19 +279,19 @@ Real problems
 
 -   Decide according to the optimal process
 
--   Serves as baseline
-
 -   Calculate according to mathematical theory
+
+-   Serves as baseline
 :::
 
 ::: {.column width="50%"}
 **Cognitive Agent** {{< fa brain >}}
 
--   Decide according to a cognitive algorithm, an Instance-Based Learning (IBL) Model
-
--   Serves as prediction of human behavior
+-   Decide according to a cognitive algorithm (Instance-Based Learning Model)
 
 -   Use [PyIBL](http://pyibl.ddmlab.com) Python library
+
+-   Serves as prediction of human behavior
 :::
 :::
 
@@ -383,7 +383,7 @@ Figures using ggplot2
 ![](images/survey.png){fig-align="center" height="175"} ![](images/choice.png){fig-align="center" height="175"}
 
 ::: {style="position: absolute; top: 85%; left: 8%; transform: translate(-50%, -50%);"}
-{{< fa brain size=2x >}} {{< fa trophy size=2x >}}
+{{< fa trophy size=2x >}} {{< fa brain size=2x >}} 
 :::
 :::
 :::
@@ -444,7 +444,7 @@ Figures using ggplot2
 
 ## IBL Model accurately predicts human behavior {style="font-size: 30px;"}
 
-![](images/fig-reward-block-1.png){fig-align="center" height="550"}
+![](images/fig-reward-block-both-1.png){fig-align="center" height="550"}
 
 ## People learn from feedback {style="font-size: 30px;"}
 
