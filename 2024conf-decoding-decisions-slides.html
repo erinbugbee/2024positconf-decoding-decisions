@@ -554,14 +554,14 @@ Analyzing data
 <section id="design-experiment" class="slide level2">
 <h2>Design Experiment</h2>
 <ul>
-<li class="fragment"><p>Decision Making Task</p>
+<li class="fragment"><p>Decision making task:</p>
 <ul>
 <li class="fragment">Optimal Stopping Task</li>
 </ul></li>
-<li class="fragment"><p>Factors to manipulate</p>
+<li class="fragment"><p>Factors to manipulate:</p>
 <ul>
-<li class="fragment"><p>Feedback Type</p></li>
-<li class="fragment"><p>Knowledge of Distribution of Option Values</p></li>
+<li class="fragment"><p>Feedback type</p></li>
+<li class="fragment"><p>Knowledge of distribution of options</p></li>
 </ul></li>
 </ul>
 </section>
@@ -751,25 +751,25 @@ Code
 <h2>Agents</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Optimal Agent</strong> <i class="fa-solid fa-trophy" aria-label="trophy"></i></p>
+<p><strong>Optimal Agents</strong> <i class="fa-solid fa-trophy" aria-label="trophy"></i></p>
 <ul>
 <li class="fragment"><p>Decide according to the optimal process</p></li>
 <li class="fragment"><p>Calculate according to mathematical theory</p></li>
-<li class="fragment"><p>Serves as baseline</p></li>
+<li class="fragment"><p>Serve as baseline</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>Cognitive Agent</strong> <i class="fa-solid fa-brain" aria-label="brain"></i></p>
+<p><strong>Cognitive Agents</strong> <i class="fa-solid fa-brain" aria-label="brain"></i></p>
 <ul>
-<li class="fragment"><p>Decide according to a cognitive algorithm (Instance-Based Learning Model)</p></li>
+<li class="fragment"><p>Decide according to a cognitive algorithm – Instance-Based Learning (IBL) Model</p></li>
 <li class="fragment"><p>Use <a href="http://pyibl.ddmlab.com">PyIBL</a> Python library</p></li>
-<li class="fragment"><p>Serves as prediction of human behavior</p></li>
+<li class="fragment"><p>Serve as prediction of human behavior</p></li>
 </ul>
 </div></div>
 </section>
 <section id="pyibl" class="slide level2">
 <h2>PyIBL</h2>
 
-<img data-src="images/pyibl-page.png" class="r-stretch"></section>
+<img data-src="images/pyibl.png" class="r-stretch"></section>
 <section id="define-agent" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Define Agent</h2>
 <div class="sourceCode" id="cb1" data-code-line-numbers="1-3"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb1-1" class="hljs-ln-code"><a href=""></a><span class="im">import</span> pyibl </span>
@@ -815,7 +815,7 @@ Code
 <span id="cb4-11" class="hljs-ln-code"><a href=""></a>choice <span class="op">=</span> a.choose([select_action, pass_action])</span>
 <span id="cb4-12" class="hljs-ln-code"><a href=""></a>choice[<span class="st">"action"</span>]</span>
 <span id="cb4-13" class="hljs-ln-code"><a href=""></a></span>
-<span id="cb4-14" class="hljs-ln-code"><a href=""></a><span class="co"># Feedback depends on correctness</span></span>
+<span id="cb4-14" class="hljs-ln-code"><a href=""></a><span class="co"># Feedback depends on condition</span></span>
 <span id="cb4-15" class="hljs-ln-code"><a href=""></a>a.respond(feedback)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="why-python" class="slide level2">
@@ -1013,7 +1013,7 @@ Code
 <ul>
 <li class="fragment">There are lots of new people, technologies, topics to learn</li>
 </ul></li>
-<li class="fragment"><p>If you have attended <strong>many</strong> times before….</p>
+<li class="fragment"><p>If you have attended <strong>many</strong> times before…</p>
 <ul>
 <li class="fragment">You likely have made connections, know which sessions are of interest</li>
 </ul></li>
@@ -1034,7 +1034,7 @@ Code
 <p><i class="fa-solid fa-laptop" aria-label="laptop"></i> <a href="https://www.erinbugbee.com">erinbugbee.com</a></p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p>github.com/erinbugbee/2024positconf-decoding-decisions</p>
+<p>bit.ly/decoding-decisions-2024</p>
 </div>
 </div>
 </section></section>

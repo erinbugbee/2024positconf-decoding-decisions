@@ -1,7 +1,7 @@
 ---
 title: "To Explore or To Exploit"
 subtitle: "Decoding Human Decision Making with `R` and `Python`"
-footer: "github.com/erinbugbee/2024positconf-decoding-decisions"
+footer: "bit.ly/decoding-decisions-2024"
 author: Erin Bugbee
 format: 
   revealjs:
@@ -119,15 +119,15 @@ Can lead to biases, which are systematic deviations from what is economically ra
 
 ## Design Experiment
 
--   Decision Making Task
+-   Decision making task:
 
     -   Optimal Stopping Task
 
--   Factors to manipulate
+-   Factors to manipulate:
 
-    -   Feedback Type
+    -   Feedback type
 
-    -   Knowledge of Distribution of Option Values
+    -   Knowledge of distribution of options
 
 ## Develop Experiment
 
@@ -275,29 +275,29 @@ Real problems
 
 ::: columns
 ::: {.column width="50%"}
-**Optimal Agent** {{< fa trophy >}}
+**Optimal Agents** {{< fa trophy >}}
 
 -   Decide according to the optimal process
 
 -   Calculate according to mathematical theory
 
--   Serves as baseline
+-   Serve as baseline
 :::
 
 ::: {.column width="50%"}
-**Cognitive Agent** {{< fa brain >}}
+**Cognitive Agents** {{< fa brain >}}
 
--   Decide according to a cognitive algorithm (Instance-Based Learning Model)
+-   Decide according to a cognitive algorithm -- Instance-Based Learning (IBL) Model
 
 -   Use [PyIBL](http://pyibl.ddmlab.com) Python library
 
--   Serves as prediction of human behavior
+-   Serve as prediction of human behavior
 :::
 :::
 
 ## PyIBL
 
-![](images/pyibl-page.png)
+![](images/pyibl.png)
 
 ## Define Agent {auto-animate="true"}
 
@@ -351,7 +351,7 @@ pass_action =  {"action": "Pass", "value": value, "dist_from_end": 9}
 choice = a.choose([select_action, pass_action])
 choice["action"]
 
-# Feedback depends on correctness
+# Feedback depends on condition
 a.respond(feedback)
 ```
 
@@ -383,7 +383,7 @@ Figures using ggplot2
 ![](images/survey.png){fig-align="center" height="175"} ![](images/choice.png){fig-align="center" height="175"}
 
 ::: {style="position: absolute; top: 85%; left: 8%; transform: translate(-50%, -50%);"}
-{{< fa trophy size=2x >}} {{< fa brain size=2x >}} 
+{{< fa trophy size=2x >}} {{< fa brain size=2x >}}
 :::
 :::
 :::
@@ -503,7 +503,7 @@ When you have a {{< fa hammer >}}, everything looks like a nail.
 :::
 
 ::: {.fragment fragment-index="2"}
-![Image created by DALL-E](images/rpython-synergy.png){height="400" fig-align="center"}
+![Image created by DALL-E](images/rpython-synergy.png){fig-align="center" height="400"}
 :::
 
 ## Exploration at posit::conf
@@ -512,7 +512,7 @@ When you have a {{< fa hammer >}}, everything looks like a nail.
 
     -   There are lots of new people, technologies, topics to learn
 
--   If you have attended **many** times before....
+-   If you have attended **many** times before...
 
     -   You likely have made connections, know which sessions are of interest
 
