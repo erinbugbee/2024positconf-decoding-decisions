@@ -3,7 +3,7 @@
 This repository contains the slides and materials for the posit::conf(2024) talk "To Explore or To Exploit: Decoding Human Decision Making with R and Python" by Erin Bugbee.
 
 
-💻 [Slides](https://erinbugbee.quarto.pub/2024positconf-decoding-human-decisions/)
+💻 [Slides](https://erinbugbee.quarto.pub/2024positconf-decoding-decisions/)
 
 👩‍💻[Personal Website](erinbugbee.com)
 
