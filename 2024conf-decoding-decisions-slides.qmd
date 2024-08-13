@@ -357,7 +357,7 @@ a.respond(feedback)
 
 ## Why Python?
 
--   PyIBL and many other modeling libraries (e.g. scikit-learn, keras)
+-   PyIBL and other modeling libraries
 
 -   General-purpose and flexible
 
@@ -431,9 +431,9 @@ Figures using ggplot2
 
 ## Why R?
 
--   Easy to visualize and manipulate data quickly
-    -   ggplot2
+-   Libraries for exploring and visualizing data
     -   tidyverse
+    -   ggplot2
 -   Excels in statistical analysis
 
 # Results
