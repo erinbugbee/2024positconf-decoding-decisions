@@ -297,7 +297,7 @@ Real problems
 
 ## PyIBL
 
-![](images/pyibl.png)
+![](images/pyibl-page-update.png){fig-align="center"}
 
 ## Define Agent {auto-animate="true"}
 
