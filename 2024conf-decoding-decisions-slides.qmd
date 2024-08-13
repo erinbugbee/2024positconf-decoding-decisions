@@ -211,7 +211,7 @@ Can lead to biases, which are systematic deviations from what is economically ra
 
 ![](images/choice-10.png){fig-align="center" width="500"}
 
-## Optimal Stopping Experiment
+## Optimal Stopping Task
 
 ![](images/experiment2_outcome.mov){height="600" fig-align="center"}
 
